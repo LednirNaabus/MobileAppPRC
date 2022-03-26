@@ -10,10 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileAppPRC">
         <activity
-            android:name=".DeleteLater"
-            android:exported="false"
-            android:label="@string/title_activity_delete_later"
-            android:theme="@style/Theme.MobileAppPRC.NoActionBar" />
+            android:name=".Home"
+            android:exported="false" />
+
     </application>
 
 </manifest>
