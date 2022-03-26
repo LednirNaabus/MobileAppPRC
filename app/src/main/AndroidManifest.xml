@@ -8,12 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MobileAppPRC">
-        <activity
-            android:name=".DeleteLater"
-            android:exported="false"
-            android:label="@string/title_activity_delete_later"
-            android:theme="@style/Theme.MobileAppPRC.NoActionBar" />
-    </application>
+        android:theme="@style/Theme.MobileAppPRC"
+        android:fullBackupContent="" />
 
 </manifest>
