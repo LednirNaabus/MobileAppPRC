@@ -17,7 +17,7 @@
         <androidx.appcompat.widget.Toolbar
             android:layout_height="?attr/actionBarSize"
             android:layout_width="match_parent"
-            android:background="@color/teal_200"
+            android:background="@color/dark_blue"
             android:id="@+id/toolbar"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -26,7 +26,14 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/fragment_container"/>
+            android:id="@+id/fragment_container">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_text"
+                android:text="Yo what the fuck" />
+        </FrameLayout>
 
     </LinearLayout>
 
