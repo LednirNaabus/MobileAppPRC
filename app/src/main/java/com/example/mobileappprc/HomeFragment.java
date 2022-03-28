@@ -21,8 +21,8 @@ public class HomeFragment extends Fragment {
     NestedScrollView nestedScrollView;
     RecyclerView recyclerView;
     ProgressBar progressBar;
-    ArrayList<MainData> dataArrayList = new ArrayList<MainData>();
-    MainAdapter adapter;
+//    ArrayList<MainData> dataArrayList = new ArrayList<MainData>();
+//    MainAdapter adapter;
     int page = 1, limit = 10;
 
     @Nullable
@@ -31,9 +31,9 @@ public class HomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        nestedScrollView = findViewById(R.id.scroll_view);
-    }
+//    @Override
+//    public void onCreate(@Nullable Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        nestedScrollView = findViewById(R.id.scroll_view);
+//    }
 }
