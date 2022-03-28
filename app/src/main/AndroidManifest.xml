@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileAppPRC">
         <activity
-            android:name=".Home"
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.MobileAppPRC.NoActionBar">
             <intent-filter>
