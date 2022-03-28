@@ -72,4 +72,5 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
     // TO DO:
     // connect laravel and database
+    // https://www.youtube.com/watch?v=jDd2fTJi5Io&list=PL9q0eNDLXnF1UxmpWjpkEY9pswdCdHIWk&index=8&ab_channel=EdwardLanceLorilla
 }
