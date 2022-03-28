@@ -13,7 +13,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void sigIn(View view) {
+    public void signIn(View view) {
         setContentView(R.layout.activity_home);
     }
 }
