@@ -69,4 +69,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             super.onBackPressed();
         }
     }
+
+    // TO DO:
+    // connect laravel and database
 }
