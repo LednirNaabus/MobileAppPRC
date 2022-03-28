@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:fontFamily="@font/roboto"
-        android:text="PRC"
+        android:text="@string/prc_acroynym"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -38,7 +38,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
         android:fontFamily="@font/roboto"
-        android:text="Republic of the Philippines"
+        android:text="@string/republicPH_label"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/toolbar"
         app:layout_constraintHorizontal_bias="0.18"
@@ -50,52 +50,52 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="24dp"
-        android:contentDescription="logo"
+        android:contentDescription="@string/prcLogo"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:srcCompat="@drawable/prc" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/contentPRCLogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:contentDescription="logo"
+        android:contentDescription="@string/prcLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:srcCompat="@drawable/prc" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/republicTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/roboto"
-        android:text="Republic of the Philippines"
+        android:text="@string/republicPH_label"
         android:textColor="@color/blue"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/contentPRCLogo"
+        app:layout_constraintStart_toEndOf="@+id/contentPRCLogo"
+        app:layout_constraintTop_toTopOf="@+id/contentPRCLogo"
         app:layout_constraintVertical_bias="0.19" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/prcAcronym"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto"
-        android:text="PRC"
+        android:text="@string/prc_acroynym"
         android:textColor="@color/blue"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/republicTitle"
+        app:layout_constraintTop_toBottomOf="@+id/republicTitle" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/backgroundBlue"
         android:layout_width="359dp"
         android:layout_height="209dp"
         android:layout_marginTop="32dp"
@@ -103,43 +103,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/prcAcronym" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/backgroundWhite"
         android:layout_width="339dp"
         android:layout_height="189dp"
         android:background="@drawable/white_radius_tiny"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/textView5" />
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundBlue"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundBlue"
+        app:layout_constraintStart_toStartOf="@+id/backgroundBlue"
+        app:layout_constraintTop_toTopOf="@+id/backgroundBlue"
+        android:contentDescription="@string/prcLogo" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five. ecimen book. It has survived not only five.ecimen book. It has survived not only five."
+        android:text="@string/lorem"
         android:textAlignment="center"
         android:textColor="@color/blue"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintEnd_toEndOf="@+id/backgroundBlue"
+        app:layout_constraintStart_toStartOf="@+id/backgroundBlue"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundBlue" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/startButton"
         android:layout_width="217dp"
         android:layout_height="56dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/button_radius_small"
-        android:text="Let's Start"
+        android:text="@string/startbtn"
         android:textAllCaps="false"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintEnd_toEndOf="@+id/textContainer"
+        app:layout_constraintStart_toStartOf="@+id/textContainer"
+        app:layout_constraintTop_toBottomOf="@+id/textContainer" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
