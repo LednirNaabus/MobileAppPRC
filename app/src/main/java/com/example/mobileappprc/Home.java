@@ -57,6 +57,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 break;
             case R.id.nav_logout:
                 Toast.makeText(this, "Logged out", Toast.LENGTH_SHORT).show();
+                setContentView(R.layout.activity_login);
                 break;
         }
 
