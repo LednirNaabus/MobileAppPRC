@@ -52,6 +52,9 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             case R.id.nav_application:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ApplicationFragment()).commit();
                 break;
+            case R.id.nav_status:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new StatusFragment()).commit();
+                break;
             case R.id.nav_logout:
                 Toast.makeText(this, "Logged out", Toast.LENGTH_SHORT).show();
                 break;
