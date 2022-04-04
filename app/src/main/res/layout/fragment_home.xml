@@ -56,91 +56,121 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:srcCompat="@drawable/prc" />
 
-    <ImageView
-        android:id="@+id/contentPRCLogo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/prcLogo"
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:srcCompat="@drawable/prc" />
+        tools:ignore="SpeakableTextPresentCheck">
 
-    <TextView
-        android:id="@+id/republicTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/republicPH_label"
-        android:textColor="@color/blue"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/contentPRCLogo"
-        app:layout_constraintStart_toEndOf="@+id/contentPRCLogo"
-        app:layout_constraintTop_toTopOf="@+id/contentPRCLogo"
-        app:layout_constraintVertical_bias="0.19" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
 
-    <TextView
-        android:id="@+id/prcAcronym"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/prc_acroynym"
-        android:textColor="@color/blue"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/republicTitle"
-        app:layout_constraintTop_toBottomOf="@+id/republicTitle" />
+            <ImageView
+                android:id="@+id/contentPRCLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/prcLogo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/prc" />
 
-    <TextView
-        android:id="@+id/backgroundBlue"
-        android:layout_width="359dp"
-        android:layout_height="209dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/image_radius_large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prcAcronym" />
+            <TextView
+                android:id="@+id/republicTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/republicPH_label"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/contentPRCLogo"
+                app:layout_constraintStart_toEndOf="@+id/contentPRCLogo"
+                app:layout_constraintTop_toTopOf="@+id/contentPRCLogo"
+                app:layout_constraintVertical_bias="0.19" />
 
-    <ImageView
-        android:id="@+id/backgroundWhite"
-        android:layout_width="339dp"
-        android:layout_height="189dp"
-        android:background="@drawable/white_radius_tiny"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundBlue"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundBlue"
-        app:layout_constraintStart_toStartOf="@+id/backgroundBlue"
-        app:layout_constraintTop_toTopOf="@+id/backgroundBlue"
-        android:contentDescription="@string/prcLogo" />
+            <TextView
+                android:id="@+id/prcAcronym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/prc_acroynym"
+                android:textColor="@color/blue"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/republicTitle"
+                app:layout_constraintTop_toBottomOf="@+id/republicTitle" />
 
-    <TextView
-        android:id="@+id/textContainer"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/lorem"
-        android:textAlignment="center"
-        android:textColor="@color/blue"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundBlue"
-        app:layout_constraintStart_toStartOf="@+id/backgroundBlue"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundBlue" />
+            <TextView
+                android:id="@+id/backgroundBlue"
+                android:layout_width="359dp"
+                android:layout_height="209dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/image_radius_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prcAcronym" />
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="217dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/button_radius_small"
-        android:text="@string/startbtn"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textContainer"
-        app:layout_constraintStart_toStartOf="@+id/textContainer"
-        app:layout_constraintTop_toBottomOf="@+id/textContainer" />
+            <ImageView
+                android:id="@+id/backgroundWhite"
+                android:layout_width="339dp"
+                android:layout_height="189dp"
+                android:background="@drawable/white_radius_tiny"
+                app:layout_constraintBottom_toBottomOf="@+id/backgroundBlue"
+                app:layout_constraintEnd_toEndOf="@+id/backgroundBlue"
+                app:layout_constraintStart_toStartOf="@+id/backgroundBlue"
+                app:layout_constraintTop_toTopOf="@+id/backgroundBlue"
+                android:contentDescription="@string/prcLogo" />
+
+            <TextView
+                android:id="@+id/textContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/lorem"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/backgroundBlue"
+                app:layout_constraintStart_toStartOf="@+id/backgroundBlue"
+                app:layout_constraintTop_toBottomOf="@+id/backgroundBlue" />
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="217dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/button_radius_small"
+                android:text="@string/startbtn"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textContainer"
+                app:layout_constraintStart_toStartOf="@+id/textContainer"
+                app:layout_constraintTop_toBottomOf="@+id/textContainer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
