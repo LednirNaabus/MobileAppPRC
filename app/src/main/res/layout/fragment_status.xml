@@ -55,184 +55,200 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:srcCompat="@drawable/prc" />
 
-    <TextView
-        android:id="@+id/name_container"
-        android:layout_width="320dp"
-        android:layout_height="207dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/rectangle1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto"
-        android:text="Name"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/name_container"
-        app:layout_constraintStart_toStartOf="@+id/name_container"
-        app:layout_constraintTop_toTopOf="@+id/name_container" />
 
-    <TextView
-        android:id="@+id/details_container"
-        android:layout_width="292dp"
-        android:layout_height="77dp"
-        android:background="@drawable/small_box_white"
-        app:layout_constraintBottom_toBottomOf="@+id/name_container"
-        app:layout_constraintEnd_toEndOf="@+id/name_container"
-        app:layout_constraintStart_toStartOf="@+id/name_container"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.155" />
-
-    <TextView
-        android:id="@+id/details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="Details"
-        android:textColor="@color/blue"
-        app:layout_constraintBottom_toBottomOf="@+id/details_container"
-        app:layout_constraintEnd_toEndOf="@+id/details_container"
-        app:layout_constraintStart_toStartOf="@+id/details_container"
-        app:layout_constraintTop_toTopOf="@+id/details_container" />
-
-    <TextView
-        android:id="@+id/status_container"
-        android:layout_width="291.88dp"
-        android:layout_height="54dp"
-        android:background="@drawable/small_box_white"
-        app:layout_constraintBottom_toBottomOf="@+id/name_container"
-        app:layout_constraintEnd_toEndOf="@+id/name_container"
-        app:layout_constraintStart_toStartOf="@+id/name_container"
-        app:layout_constraintTop_toBottomOf="@+id/details_container" />
-
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Status: Reviewing"
-        android:textColor="@color/blue"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/status_container"
-        app:layout_constraintEnd_toEndOf="@+id/status_container"
-        app:layout_constraintStart_toStartOf="@+id/status_container"
-        app:layout_constraintTop_toTopOf="@+id/status_container" />
-
-    <TextView
-        android:id="@+id/pending_container"
-        android:layout_width="320dp"
-        android:layout_height="343dp"
-        android:background="@drawable/rectangle1"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_container"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="SpeakableTextPresentCheck">
 
-    <TextView
-        android:id="@+id/pending_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:fontFamily="@font/roboto"
-        android:text="Pending"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/pending_container"
-        app:layout_constraintStart_toStartOf="@+id/pending_container"
-        app:layout_constraintTop_toTopOf="@+id/pending_container"
-        app:layout_constraintVertical_bias="0.057" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
 
-    <TextView
-        android:id="@+id/pending_deadlines"
-        android:layout_width="320dp"
-        android:layout_height="264dp"
-        android:background="@drawable/white_rectangle_0_radius"
-        app:layout_constraintBottom_toBottomOf="@+id/pending_container"
-        app:layout_constraintEnd_toEndOf="@+id/pending_container"
-        app:layout_constraintStart_toStartOf="@+id/pending_container"
-        app:layout_constraintTop_toTopOf="@+id/pending_container"
-        app:layout_constraintVertical_bias="0.734" />
+            <TextView
+                android:id="@+id/name_container"
+                android:layout_width="320dp"
+                android:layout_height="207dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rectangle1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/deadline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:text="Deadline"
-        android:textColor="@color/blue"
-        app:layout_constraintBottom_toTopOf="@+id/pending_item"
-        app:layout_constraintStart_toStartOf="@+id/pending_deadlines"
-        app:layout_constraintTop_toTopOf="@+id/pending_deadlines"
-        app:layout_constraintVertical_bias="0.744" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/name_container"
+                app:layout_constraintStart_toStartOf="@+id/name_container"
+                app:layout_constraintTop_toTopOf="@+id/name_container" />
 
-    <TextView
-        android:id="@+id/task"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="136dp"
-        android:text="Task"
-        android:textColor="@color/blue"
-        app:layout_constraintBottom_toTopOf="@+id/pending_item"
-        app:layout_constraintEnd_toEndOf="@+id/pending_deadlines"
-        app:layout_constraintTop_toTopOf="@+id/pending_deadlines"
-        app:layout_constraintVertical_bias="0.744" />
+            <TextView
+                android:id="@+id/details_container"
+                android:layout_width="292dp"
+                android:layout_height="77dp"
+                android:background="@drawable/small_box_white"
+                app:layout_constraintBottom_toBottomOf="@+id/name_container"
+                app:layout_constraintEnd_toEndOf="@+id/name_container"
+                app:layout_constraintStart_toStartOf="@+id/name_container"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                app:layout_constraintVertical_bias="0.155" />
 
-    <TextView
-        android:id="@+id/pending_item"
-        android:layout_width="267dp"
-        android:layout_height="27dp"
-        android:background="@drawable/small_box_white_dark_outline"
-        app:layout_constraintBottom_toBottomOf="@+id/pending_deadlines"
-        app:layout_constraintEnd_toEndOf="@+id/pending_deadlines"
-        app:layout_constraintHorizontal_bias="0.698"
-        app:layout_constraintStart_toStartOf="@+id/pending_deadlines"
-        app:layout_constraintTop_toTopOf="@+id/pending_deadlines"
-        app:layout_constraintVertical_bias="0.278" />
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Details"
+                android:textColor="@color/blue"
+                app:layout_constraintBottom_toBottomOf="@+id/details_container"
+                app:layout_constraintEnd_toEndOf="@+id/details_container"
+                app:layout_constraintStart_toStartOf="@+id/details_container"
+                app:layout_constraintTop_toTopOf="@+id/details_container" />
 
-    <TextView
-        android:id="@+id/pending_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="1"
-        android:textColor="@color/blue"
-        app:layout_constraintEnd_toStartOf="@+id/pending_item"
-        app:layout_constraintHorizontal_bias="0.827"
-        app:layout_constraintStart_toStartOf="@+id/pending_deadlines"
-        app:layout_constraintTop_toTopOf="@+id/pending_deadlines" />
+            <TextView
+                android:id="@+id/status_container"
+                android:layout_width="291.88dp"
+                android:layout_height="54dp"
+                android:background="@drawable/small_box_white"
+                app:layout_constraintBottom_toBottomOf="@+id/name_container"
+                app:layout_constraintEnd_toEndOf="@+id/name_container"
+                app:layout_constraintStart_toStartOf="@+id/name_container"
+                app:layout_constraintTop_toBottomOf="@+id/details_container" />
 
-    <TextView
-        android:id="@+id/deadline_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:text="January 31, 2022"
-        android:textColor="@color/blue"
-        android:textSize="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/pending_item"
-        app:layout_constraintStart_toStartOf="@+id/pending_item"
-        app:layout_constraintTop_toTopOf="@+id/pending_item" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Reviewing"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/status_container"
+                app:layout_constraintEnd_toEndOf="@+id/status_container"
+                app:layout_constraintStart_toStartOf="@+id/status_container"
+                app:layout_constraintTop_toTopOf="@+id/status_container" />
 
-    <TextView
-        android:id="@+id/task_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="Step 1 Title: Question 4"
-        android:textColor="@color/blue"
-        android:textSize="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/pending_item"
-        app:layout_constraintEnd_toEndOf="@+id/pending_item"
-        app:layout_constraintTop_toTopOf="@+id/pending_item" />
+            <TextView
+                android:id="@+id/pending_container"
+                android:layout_width="320dp"
+                android:layout_height="343dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/rectangle1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_container" />
+
+            <TextView
+                android:id="@+id/pending_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/roboto"
+                android:text="Pending"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/pending_deadlines"
+                app:layout_constraintStart_toStartOf="@+id/pending_container"
+                app:layout_constraintTop_toTopOf="@+id/pending_container" />
+
+            <TextView
+                android:id="@+id/pending_deadlines"
+                android:layout_width="0dp"
+                android:layout_height="264dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/white_rectangle_0_radius"
+                app:layout_constraintBottom_toBottomOf="@+id/pending_container"
+                app:layout_constraintEnd_toEndOf="@+id/pending_container"
+                app:layout_constraintStart_toStartOf="@+id/pending_container" />
+
+            <TextView
+                android:id="@+id/deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Deadline"
+                android:textColor="@color/blue"
+                app:layout_constraintBottom_toTopOf="@+id/pending_item"
+                app:layout_constraintStart_toStartOf="@+id/deadline_item" />
+
+            <TextView
+                android:id="@+id/task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Task"
+                android:textColor="@color/blue"
+                app:layout_constraintBottom_toTopOf="@+id/pending_item"
+                app:layout_constraintStart_toStartOf="@+id/task_item" />
+
+            <TextView
+                android:id="@+id/pending_item"
+                android:layout_width="267dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/small_box_white_dark_outline"
+                app:layout_constraintStart_toStartOf="@+id/pending_container"
+                app:layout_constraintTop_toTopOf="@+id/pending_deadlines" />
+
+            <TextView
+                android:id="@+id/pending_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="1"
+                android:textColor="@color/blue"
+                app:layout_constraintBottom_toBottomOf="@+id/pending_item"
+                app:layout_constraintEnd_toStartOf="@+id/pending_item"
+                app:layout_constraintTop_toTopOf="@+id/pending_item" />
+
+            <TextView
+                android:id="@+id/deadline_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="January 31, 2022"
+                android:textColor="@color/blue"
+                android:textSize="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pending_item"
+                app:layout_constraintStart_toStartOf="@+id/pending_item"
+                app:layout_constraintTop_toTopOf="@+id/pending_item" />
+
+            <TextView
+                android:id="@+id/task_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Step 1 Title: Question 4"
+                android:textColor="@color/blue"
+                android:textSize="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pending_item"
+                app:layout_constraintEnd_toEndOf="@+id/pending_item"
+                app:layout_constraintTop_toTopOf="@+id/pending_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
