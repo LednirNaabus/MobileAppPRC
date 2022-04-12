@@ -3,6 +3,40 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/button_radius_small.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/button_radius_tiny.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/form_radius_medium.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/ic_application.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/ic_calendar.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/ic_home.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/ic_logout.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/ic_status.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/image_radius_large.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/rectangle1.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/small_box_white.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/small_box_white_dark_outline.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/white_radius_tiny.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/drawable/white_rectangle_0_radius.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/activity_sidehome.xml" value="0.264" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/fragment_application.xml" value="0.264" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/fragment_calendar.xml" value="0.4" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/fragment_status.xml" value="0.4" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/list_row_main.xml" value="0.4" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/nav_header.xml" value="0.2" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/side_nav_bar.xml" value="0.152" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/side_navbar.xml" value="0.4" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/layout/side_navbar_header.xml" value="0.264" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/menu/drawer_menu.xml" value="0.6" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/menu/side_navbar.xml" value="0.264" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/menu/side_navbar_menu.xml" value="0.264" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26614583333333336" />
+        <entry key="..\:/Document/GitHub/MobileAppPRC/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Val Rindel/Documents/My Files/School/College/CS-3/Term 3/CS200-02/MobileAppPRC/app/src/main/res/drawable/button_radius_small.xml" value="0.2101851851851852" />
         <entry key="..\:/Users/Val Rindel/Documents/My Files/School/College/CS-3/Term 3/CS200-02/MobileAppPRC/app/src/main/res/drawable/ic_home.xml" value="0.3880208333333333" />
         <entry key="..\:/Users/Val Rindel/Documents/My Files/School/College/CS-3/Term 3/CS200-02/MobileAppPRC/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3880208333333333" />
@@ -27,10 +61,6 @@
         <entry key="..\:/Users/Val Rindel/Documents/My Files/School/College/CS-3/Term 3/CS200-02/MobileAppPRC/app/src/main/res/layout/nav_header.xml" value="0.5" />
         <entry key="..\:/Users/Val Rindel/Documents/My Files/School/College/CS-3/Term 3/CS200-02/MobileAppPRC/app/src/main/res/layout/test_layout.xml" value="0.33" />
         <entry key="..\:/Users/Val Rindel/Documents/My Files/School/College/CS-3/Term 3/CS200-02/MobileAppPRC/app/src/main/res/menu/drawer_menu.xml" value="0.371875" />
-        <entry key="..\:/Users/johnp/AndroidStudioProjects/MobileAppPRC/app/src/main/res/layout/activity_home.xml" value="0.24728260869565216" />
-        <entry key="..\:/Users/johnp/AndroidStudioProjects/MobileAppPRC/app/src/main/res/layout/fragment_calendar.xml" value="0.24728260869565216" />
-        <entry key="..\:/Users/johnp/AndroidStudioProjects/MobileAppPRC/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/Users/johnp/AndroidStudioProjects/MobileAppPRC/app/src/main/res/layout/fragment_status.xml" value="0.264" />
       </map>
     </option>
   </component>

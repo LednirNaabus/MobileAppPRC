@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_application"
+            android:icon="@drawable/ic_arrow"
+            android:title="My Application"/>
+        <item android:id="@+id/nav_detail"
+            android:icon="@drawable/ic_detail"
+            android:title="Details" />
+        <item android:id="@+id/nav_step1"
+            android:icon="@drawable/ic_step1"
+            android:title="Step 1: Title" />
+        <item android:id="@+id/nav_step2"
+            android:icon="@drawable/ic_step2"
+            android:title="Step 2: Title" />
+        <item android:id="@+id/nav_step3"
+            android:icon="@drawable/ic_step3"
+            android:title="Step 3: Title" />
+        <item android:id="@+id/nav_step4"
+            android:icon="@drawable/ic_step5"
+            android:title="Step 4: Title" />
+        <item android:id="@+id/nav_step5"
+            android:icon="@drawable/ic_step5"
+            android:title="Step 5: Title" />
+        <item android:id="@+id/nav_step6"
+            android:icon="@drawable/ic_step6"
+            android:title="Step 6: Title" />
+        <item android:id="@+id/nav_step7"
+            android:icon="@drawable/ic_step1"
+            android:title="Step 7: Title" />
+        <item android:id="@+id/nav_step8"
+            android:icon="@drawable/ic_step1"
+            android:title="Step 8: Title" />
+    </group>
+</menu>
