@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
     private void processLoginStep(String token, String username, String password) {
         RequestQueue queue = Volley.newRequestQueue(this);
         //Lagay niyo IP Address niyo sa string nato
-        String ipAddress = "";
+        String ipAddress = "192.168.254.108";
         String url ="http://"+ipAddress+"/captcha_check.php?captcha="+token;
 
         /*
@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        openHomeActivity();
+                        openOtpActivity();
                         Toast.makeText(LoginActivity.this, ""+response, Toast.LENGTH_LONG).show();
 
                     }
@@ -147,6 +147,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void openHomeActivity() {
         Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
+    private void openOtpActivity(){
+        Intent intent = new Intent(this, OTP.class);
         startActivity(intent);
     }
 
