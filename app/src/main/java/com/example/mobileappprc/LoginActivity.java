@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
     private void processLoginStep(String token, String username, String password) {
         RequestQueue queue = Volley.newRequestQueue(this);
         //Lagay niyo IP Address niyo sa string nato
-        String ipAddress = "192.168.254.108";
+        String ipAddress = "";
         String url ="http://"+ipAddress+"/captcha_check.php?captcha="+token;
 
         /*
