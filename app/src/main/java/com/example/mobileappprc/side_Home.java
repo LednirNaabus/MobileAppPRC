@@ -58,13 +58,12 @@ public class side_Home extends AppCompatActivity  {
     }
 *\
  */
-    //THIS IS SHIT THAT HAVING PROBLEM CONNECTING THE BUTTON XD
-    public void openCloseNavigationDrawer() {
+    //THIS IS SHIT THAT HAVING PROBLEM CONNECTING THE BUTTON X
+    public void openCloseNavigationDrawer(View view) {
         if(drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             drawer.openDrawer(GravityCompat.START);
         }
     }
-
 }
